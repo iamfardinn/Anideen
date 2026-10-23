@@ -1,0 +1,45 @@
+Time 2026-10-23T16:55:48.3938506Z
+Commit 00000018 217729 keys in 61ms 310µs 600ns
+FAM | META SEQ | SST SEQ         | RANGE
+  0 | 00000015 | 00000014 SST    |                                                                             O                        | c44bdff4074eecdb-c44bdff4074eecdb (0 MiB, fresh, 38 bytes, 1 entries, 0 tombstones)
+  1 | 00000016 | 00000006 SST    | [=======================]                                                                            | 000162bda900bf14-3ffdae33b3a9deb9 (0 MiB, fresh, 983563 bytes, 18139 entries, 0 tombstones)
+  1 | 00000016 | 00000007 SST    |                          [=======================]                                                   | 40033e172ef5726c-7fff898d608ce952 (0 MiB, fresh, 992648 bytes, 17914 entries, 0 tombstones)
+  1 | 00000016 | 00000008 SST    |                                                   [=======================]                          | 800015b4f029548b-bfff72bb84ef3ae8 (0 MiB, fresh, 1036328 bytes, 18230 entries, 0 tombstones)
+  1 | 00000016 | 00000009 SST    |                                                                            [=======================] | c0002f8f2f9a1a05-fffec925b18eeb5e (0 MiB, fresh, 1013876 bytes, 18293 entries, 0 tombstones)
+  2 | 00000017 | 00000002 SST    |                          [===========]                                                               | 40033e172ef5726c-5fff97cd29da7edc (2 MiB, fresh, 2164193 bytes, 8893 entries, 0 tombstones)
+  2 | 00000017 | 00000003 SST    |                                                                            [===========]             | c0002f8f2f9a1a05-dfff17daaafff866 (2 MiB, fresh, 2274506 bytes, 9113 entries, 0 tombstones)
+  2 | 00000017 | 00000001 SST    | [===========]                                                                                        | 000162bda900bf14-1ffed77d0fc024c8 (3 MiB, fresh, 3203550 bytes, 9157 entries, 0 tombstones)
+  2 | 00000017 | 00000004 SST    |                                                   [===========]                                      | 800015b4f029548b-9fffe987c68ef020 (3 MiB, fresh, 3685707 bytes, 9050 entries, 0 tombstones)
+  2 | 00000017 | 00000011 SST    |                                                                                        [===========] | e001cec8900201bc-fffec925b18eeb5e (2 MiB, fresh, 3072088 bytes, 9180 entries, 0 tombstones)
+  2 | 00000017 | 00000010 SST    |                                      [===========]                                                   | 6000464e1514c7ff-7fff898d608ce952 (3 MiB, fresh, 3184011 bytes, 9021 entries, 0 tombstones)
+  2 | 00000017 | 00000012 SST    |             [===========]                                                                            | 20015b66a8a18f5a-3ffdae33b3a9deb9 (2 MiB, fresh, 2141974 bytes, 8982 entries, 0 tombstones)
+  2 | 00000017 | 00000013 SST    |                                                               [===========]                          | a00087ff0cca17a5-bfff72bb84ef3ae8 (2 MiB, fresh, 3092771 bytes, 9180 entries, 0 tombstones)
+  3 | 00000018 | 00000005 SST    | [==================================================================================================] | 0000cc1f2bb17654-ffff75639be02fa8 (0 MiB, fresh, 874417 bytes, 72576 entries, 0 tombstones)
+  1 | 00000021 | Compaction:
+  1 | 00000021 | MERGE (72576 keys):
+  1 | 00000021 | 00000006 INPUT  | [=======================]                                                                            | 000162bda900bf14-3ffdae33b3a9deb9
+  1 | 00000021 | 00000007 INPUT  |                          [=======================]                                                   | 40033e172ef5726c-7fff898d608ce952
+  1 | 00000021 | 00000008 INPUT  |                                                   [=======================]                          | 800015b4f029548b-bfff72bb84ef3ae8
+  1 | 00000021 | 00000009 INPUT  |                                                                            [=======================] | c0002f8f2f9a1a05-fffec925b18eeb5e
+  1 | 00000021 | 00000019 OUTPUT | [==================================================================================================] | 000162bda900bf14-fffec925b18eeb5e (cold bottom)
+  2 | 00000022 | Compaction:
+  2 | 00000022 | MERGE (72576 keys):
+  2 | 00000022 | 00000002 INPUT  |                          [===========]                                                               | 40033e172ef5726c-5fff97cd29da7edc
+  2 | 00000022 | 00000003 INPUT  |                                                                            [===========]             | c0002f8f2f9a1a05-dfff17daaafff866
+  2 | 00000022 | 00000001 INPUT  | [===========]                                                                                        | 000162bda900bf14-1ffed77d0fc024c8
+  2 | 00000022 | 00000004 INPUT  |                                                   [===========]                                      | 800015b4f029548b-9fffe987c68ef020
+  2 | 00000022 | 00000011 INPUT  |                                                                                        [===========] | e001cec8900201bc-fffec925b18eeb5e
+  2 | 00000022 | 00000010 INPUT  |                                      [===========]                                                   | 6000464e1514c7ff-7fff898d608ce952
+  2 | 00000022 | 00000012 INPUT  |             [===========]                                                                            | 20015b66a8a18f5a-3ffdae33b3a9deb9
+  2 | 00000022 | 00000013 INPUT  |                                                               [===========]                          | a00087ff0cca17a5-bfff72bb84ef3ae8
+  2 | 00000022 | 00000020 OUTPUT | [==================================================================================================] | 000162bda900bf14-fffec925b18eeb5e (cold bottom)
+Time 2026-10-23T16:55:48.6265178Z
+Commit 00000023 145152 keys in 58ms 21µs 200ns
+FAM | META SEQ | SST SEQ         | RANGE
+  1 | 00000021 | 00000019 SST    | [==================================================================================================] | 000162bda900bf14-fffec925b18eeb5e (3 MiB, cold bottom, 4024065 bytes, 72576 entries, 0 tombstones)
+  1 | 00000021 | 00000006 00000007 00000008 00000009 OBSOLETE SST
+  2 | 00000022 | 00000020 SST    | [==================================================================================================] | 000162bda900bf14-fffec925b18eeb5e (21 MiB, cold bottom, 22818660 bytes, 72576 entries, 0 tombstones)
+  2 | 00000022 | 00000001 00000002 00000003 00000004 00000010 00000011 00000012 00000013 OBSOLETE SST
+    |          | 00000001 00000002 00000003 00000004 00000006 00000007 00000008 00000009 00000010 00000011 00000012 00000013 SST DELETED
+    |          | 00000016 META DELETED
+    |          | 00000017 META DELETED
